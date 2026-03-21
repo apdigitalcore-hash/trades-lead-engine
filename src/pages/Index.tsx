@@ -7,6 +7,8 @@ import TestimonialsSection from "@/components/landing/TestimonialsSection";
 import FAQSection from "@/components/landing/FAQSection";
 import GuaranteeSection from "@/components/landing/GuaranteeSection";
 import FinalCTA from "@/components/landing/FinalCTA";
+import Footer from "@/components/landing/Footer";
+import StickyMobileCTA from "@/components/landing/StickyMobileCTA";
 
 const Index = () => (
   <main className="overflow-x-hidden">
@@ -19,6 +21,8 @@ const Index = () => (
     <FAQSection />
     <GuaranteeSection />
     <FinalCTA />
+    <Footer />
+    <StickyMobileCTA />
   </main>
 );
 
