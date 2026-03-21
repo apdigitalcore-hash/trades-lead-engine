@@ -60,7 +60,7 @@ const HeroSection = () => (
       </p>
 
       <a
-        href="#book-call"
+        href="mailto:apdigital.core@gmail.com"
         className="inline-block w-full max-w-md rounded-md bg-purple px-8 py-4 text-center text-lg font-bold uppercase tracking-wide text-white transition-all hover:brightness-110 active:scale-[0.98]"
       >
         BOOK YOUR FREE STRATEGY CALL →

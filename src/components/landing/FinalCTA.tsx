@@ -64,12 +64,12 @@ const FinalCTA = () => {
             onChange={(e) => setForm({ ...form, phone: e.target.value })}
             className="w-full rounded-md bg-white px-4 py-3 text-secondary font-medium placeholder:text-navy/40 focus:outline-none focus:ring-2 focus:ring-purple"
           />
-          <button
-            type="submit"
-            className="w-full rounded-md bg-purple px-8 py-4 text-lg font-bold uppercase tracking-wide text-white transition-all hover:brightness-110 active:scale-[0.98]"
+          <a
+            href="mailto:apdigital.core@gmail.com"
+            className="block w-full rounded-md bg-purple px-8 py-4 text-center text-lg font-bold uppercase tracking-wide text-white transition-all hover:brightness-110 active:scale-[0.98]"
           >
             BOOK MY FREE STRATEGY CALL →
-          </button>
+          </a>
         </form>
 
         <p className="mt-4 text-sm text-white/40 leading-relaxed">
