@@ -1,17 +1,17 @@
-import { useState } from "react";
+import { useEffect } from "react";
 
-const businessTypes = [
-  "Plumber",
-  "Electrician",
-  "HVAC",
-  "Roofer",
-  "General Contractor",
-  "Landscaper",
-  "Other",
-];
+const CALENDLY_URL = "https://calendly.com/apdigital-core/30min?background_color=0f1629&text_color=ffffff&primary_color=6c47ff";
 
 const FinalCTA = () => {
-  const [form, setForm] = useState({ name: "", business: "", city: "", phone: "" });
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://assets.calendly.com/assets/external/widget.js";
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <section id="book-call" className="section-dark px-4 py-16 md:py-24">
@@ -22,57 +22,29 @@ const FinalCTA = () => {
         </div>
 
         <h2 className="mb-4 font-inter text-3xl font-black uppercase leading-[0.95] tracking-tight md:text-6xl">
-          READY TO STOP LOSING JOBS TO COMPETITORS?
+          Book Your Free 30-Min Strategy Call
         </h2>
 
-        <p className="mx-auto mb-10 max-w-2xl text-lg text-white/60">
-          Book a free 20-minute strategy call. We'll audit your current online presence, show you exactly what competitors are doing, and give you a custom game plan — whether you work with us or not.
+        <p className="mx-auto mb-6 max-w-2xl text-lg text-white/60">
+          Pick a time that works for you. Arjun will personally review your business before the call — no prep needed on your end.
         </p>
 
-        <form
-          onSubmit={(e) => e.preventDefault()}
-          className="mx-auto max-w-md space-y-4"
-        >
-          <input
-            type="text"
-            placeholder="First Name"
-            value={form.name}
-            onChange={(e) => setForm({ ...form, name: e.target.value })}
-            className="w-full rounded-md bg-white px-4 py-3 text-secondary font-medium placeholder:text-navy/40 focus:outline-none focus:ring-2 focus:ring-purple"
-          />
-          <select
-            value={form.business}
-            onChange={(e) => setForm({ ...form, business: e.target.value })}
-            className="w-full rounded-md bg-white px-4 py-3 text-secondary font-medium focus:outline-none focus:ring-2 focus:ring-purple"
-          >
-            <option value="" disabled>Business Type</option>
-            {businessTypes.map((t) => (
-              <option key={t} value={t}>{t}</option>
-            ))}
-          </select>
-          <input
-            type="text"
-            placeholder="City"
-            value={form.city}
-            onChange={(e) => setForm({ ...form, city: e.target.value })}
-            className="w-full rounded-md bg-white px-4 py-3 text-secondary font-medium placeholder:text-navy/40 focus:outline-none focus:ring-2 focus:ring-purple"
-          />
-          <input
-            type="tel"
-            placeholder="Phone Number"
-            value={form.phone}
-            onChange={(e) => setForm({ ...form, phone: e.target.value })}
-            className="w-full rounded-md bg-white px-4 py-3 text-secondary font-medium placeholder:text-navy/40 focus:outline-none focus:ring-2 focus:ring-purple"
-          />
-          <a
-            href="mailto:apdigital.core@gmail.com"
-            className="block w-full rounded-md bg-purple px-8 py-4 text-center text-lg font-bold uppercase tracking-wide text-white transition-all hover:brightness-110 active:scale-[0.98]"
-          >
-            BOOK MY FREE STRATEGY CALL →
-          </a>
-        </form>
+        <p className="mb-6 text-sm font-semibold" style={{ color: "#f59e0b" }}>
+          ⚡ Only 3 new client spots open this month in BC
+        </p>
 
-        <p className="mt-4 text-sm text-white/40 leading-relaxed">
+        <div
+          className="mx-auto overflow-hidden rounded-2xl border border-purple"
+          style={{ maxWidth: 700 }}
+        >
+          <div
+            className="calendly-inline-widget"
+            data-url={CALENDLY_URL}
+            style={{ minWidth: 320, height: 700 }}
+          />
+        </div>
+
+        <p className="mt-6 text-sm text-white/40 leading-relaxed">
           No commitment. No sales pressure. 20 minutes.<br />
           Arjun will personally review your business before the call.
         </p>

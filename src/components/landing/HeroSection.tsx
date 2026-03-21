@@ -1,3 +1,5 @@
+const CALENDLY = "https://calendly.com/apdigital-core/30min";
+
 const stats = [
   { number: "31", label: "LEADS GENERATED", desc: "First 30 days — HVAC client, Surrey BC" },
   { number: "3.2x", label: "RETURN ON AD SPEND", desc: "Meta Ads — General Contractor, Langley BC" },
@@ -56,11 +58,13 @@ const HeroSection = () => (
       </div>
 
       <p className="mx-auto mb-10 max-w-2xl text-base leading-relaxed text-white/70">
-        AP Digital is a Pitt Meadows BC agency that handles your entire digital marketing — Instagram content, Reels, Meta Ads — done for you by founder Arjun Sharma personally. Not an account manager. Not an intern. Arjun.
+        AP Digital is a Pitt Meadows, BC agency serving trades businesses across Metro Vancouver, Surrey, Langley, Burnaby, and Coquitlam. We handle your entire digital marketing — Instagram content, Reels, Meta Ads — done for you by founder Arjun Sharma personally. Not an account manager. Not an intern. Arjun.
       </p>
 
       <a
-        href="mailto:apdigital.core@gmail.com"
+        href={CALENDLY}
+        target="_blank"
+        rel="noopener noreferrer"
         className="inline-block w-full max-w-md rounded-md bg-purple px-8 py-4 text-center text-lg font-bold uppercase tracking-wide text-white transition-all hover:brightness-110 active:scale-[0.98]"
       >
         BOOK YOUR FREE STRATEGY CALL →
