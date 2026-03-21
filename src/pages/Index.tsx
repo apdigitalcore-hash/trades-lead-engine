@@ -1,16 +1,25 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import HeroSection from "@/components/landing/HeroSection";
+import SocialProofBar from "@/components/landing/SocialProofBar";
+import ProblemSection from "@/components/landing/ProblemSection";
+import OfferSection from "@/components/landing/OfferSection";
+import WhoIsThisFor from "@/components/landing/WhoIsThisFor";
+import TestimonialsSection from "@/components/landing/TestimonialsSection";
+import FAQSection from "@/components/landing/FAQSection";
+import GuaranteeSection from "@/components/landing/GuaranteeSection";
+import FinalCTA from "@/components/landing/FinalCTA";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
-  return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
-    </div>
-  );
-};
-
-const Index = PlaceholderIndex;
+const Index = () => (
+  <main className="overflow-x-hidden">
+    <HeroSection />
+    <SocialProofBar />
+    <ProblemSection />
+    <OfferSection />
+    <WhoIsThisFor />
+    <TestimonialsSection />
+    <FAQSection />
+    <GuaranteeSection />
+    <FinalCTA />
+  </main>
+);
 
 export default Index;
