@@ -1,7 +1,7 @@
 const problems = [
   "You're paying a generic agency that doesn't know the difference between a plumber and an electrician",
   "You're posting on Instagram but getting zero leads — just likes from other contractors",
-  "Your competitors are running ads, showing up on Instagram, and booking the jobs that should be yours",
+  "Your competitors across Metro Vancouver, Maple Ridge, and Abbotsford are running ads, showing up on Instagram, and booking the jobs that should be yours",
 ];
 
 const ProblemSection = () => (
