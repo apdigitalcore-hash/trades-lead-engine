@@ -15,8 +15,8 @@ const HeroSection = () => (
         DIGITAL MARKETING FOR TRADES | BC CANADA
       </div>
 
-      <h1 className="mb-6 font-inter text-4xl font-black uppercase leading-[0.95] tracking-tight md:text-6xl lg:text-7xl">
-        IS YOUR COMPETITOR STEALING YOUR CUSTOMERS WHILE YOU'RE ON THE JOB?
+      <h1 className="mb-6 font-inter text-4xl font-black leading-[0.95] tracking-tight md:text-6xl lg:text-7xl">
+        Trades Marketing Agency BC | Plumber, HVAC &amp; Electrician Leads | AP Digital
       </h1>
 
       <p className="mx-auto mb-10 max-w-2xl text-lg text-white/60 md:text-xl">

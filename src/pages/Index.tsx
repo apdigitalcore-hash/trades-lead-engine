@@ -9,18 +9,21 @@ import GuaranteeSection from "@/components/landing/GuaranteeSection";
 import FinalCTA from "@/components/landing/FinalCTA";
 import Footer from "@/components/landing/Footer";
 import StickyMobileCTA from "@/components/landing/StickyMobileCTA";
+import LeadForm from "@/components/landing/LeadForm";
 
 const Index = () => (
   <main className="overflow-x-hidden">
     <HeroSection />
+    <LeadForm />
     <SocialProofBar />
     <ProblemSection />
     <OfferSection />
-    <WhoIsThisFor />
     <TestimonialsSection />
+    <WhoIsThisFor />
     <FAQSection />
     <GuaranteeSection />
     <FinalCTA />
+    <LeadForm />
     <Footer />
     <StickyMobileCTA />
   </main>
