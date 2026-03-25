@@ -15,7 +15,16 @@ const Footer = () => (
     </p>
     <p>
       <a href="https://ap-digital.ca" className="hover:text-white/70 underline transition-colors duration-200">
-        ← Back to AP Digital | Full-Service Digital Marketing
+        AP Digital — Full-Service Digital Marketing Agency
+      </a>
+    </p>
+    <p>
+      <a href="https://coaching.ap-digital.ca" className="hover:text-white/70 underline transition-colors duration-200">
+        Coaching Marketing BC
+      </a>
+      {" · "}
+      <a href="https://contractor.ap-digital.ca" className="hover:text-white/70 underline transition-colors duration-200">
+        Contractor Marketing BC
       </a>
     </p>
   </footer>

@@ -25,7 +25,7 @@ const OfferSection = () => (
           WHAT YOU GET WITH AP DIGITAL
         </p>
         <h2 className="mb-12 font-inter text-3xl font-black leading-tight text-secondary md:text-5xl">
-          Everything you need to dominate your local market. Nothing you don't.
+          Metro Vancouver Trades Marketing — Everything you need to dominate your local market.
         </h2>
       </div>
 

@@ -11,7 +11,7 @@ const ProblemSection = () => (
         WHY MOST TRADES BUSINESSES STAY STUCK
       </p>
       <h2 className="mb-12 font-inter text-3xl font-black leading-tight md:text-5xl">
-        You're great at the trade. But your phone isn't ringing enough.
+          BC Plumber, Electrician &amp; HVAC Lead Generation starts with the right system — not more posting.
       </h2>
 
       <div className="grid gap-6 md:grid-cols-3">

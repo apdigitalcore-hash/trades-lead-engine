@@ -32,7 +32,7 @@ const FAQSection = () => (
   <section className="section-dark px-4 py-16 md:py-24">
     <div className="mx-auto max-w-3xl">
       <h2 className="mb-12 text-center font-inter text-3xl font-black md:text-5xl">
-        Your questions, answered:
+        Questions about no-contract trades marketing? Answered.
       </h2>
 
       <Accordion type="single" collapsible className="space-y-3">
